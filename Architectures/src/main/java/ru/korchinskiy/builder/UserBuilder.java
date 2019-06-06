@@ -1,4 +1,4 @@
-package builder;
+package ru.korchinskiy.builder;
 
 import java.time.LocalDate;
 

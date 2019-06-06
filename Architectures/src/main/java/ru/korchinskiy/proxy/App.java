@@ -1,6 +1,6 @@
-package proxy;
+package ru.korchinskiy.proxy;
 
-import builder.UserService;
+import ru.korchinskiy.builder.UserService;
 
 public class App {
 

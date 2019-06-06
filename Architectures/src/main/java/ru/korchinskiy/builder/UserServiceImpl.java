@@ -1,4 +1,4 @@
-package builder;
+package ru.korchinskiy.builder;
 
 public class UserServiceImpl implements UserService {
 

@@ -1,4 +1,4 @@
-package observer;
+package ru.korchinskiy.observer;
 
 import java.time.LocalDateTime;
 
