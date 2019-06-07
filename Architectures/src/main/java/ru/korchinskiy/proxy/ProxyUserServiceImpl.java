@@ -1,7 +1,7 @@
-package proxy;
+package ru.korchinskiy.proxy;
 
-import builder.UserService;
-import builder.UserServiceImpl;
+import ru.korchinskiy.builder.UserService;
+import ru.korchinskiy.builder.UserServiceImpl;
 
 public class ProxyUserServiceImpl implements UserService {
     private UserService userService = new UserServiceImpl();

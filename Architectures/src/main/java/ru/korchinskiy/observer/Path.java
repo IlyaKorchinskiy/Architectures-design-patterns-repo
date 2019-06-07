@@ -1,6 +1,5 @@
-package observer;
+package ru.korchinskiy.observer;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Path {
