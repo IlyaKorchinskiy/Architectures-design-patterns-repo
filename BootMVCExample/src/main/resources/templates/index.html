@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot and Thymeleaf example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h3>Add path:</h3>
+<form action="#" th:action="@{/add}" th:object="${path}" method="post">
+    <table>
+        <tr>
+            <td>Train number:</td>
+            <td><input type="text" th:field="*{trainNumber}"/></td>
+            <!--<td th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Title error message</td>-->
+        </tr>
+        <tr>
+            <td>From station:</td>
+            <td><input type="text" th:field="*{fromStation}"/></td>
+            <!--<td th:if="${#fields.hasErrors('content')}" th:errors="*{content}">Content error message</td>-->
+        </tr>
+        <tr>
+            <td>To station:</td>
+            <td><input type="text" th:field="*{toStation}"/></td>
+            <!--<td th:if="${#fields.hasErrors('content')}" th:errors="*{content}">Content error message</td>-->
+        </tr>
+        <tr>
+            <td>To station:</td>
+            <td><input type="datetime-local" th:field="*{dateTime}"/></td>
+            <!--<td th:if="${#fields.hasErrors('content')}" th:errors="*{content}">Content error message</td>-->
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<h3>Path List:</h3>
+<div th:each="path : ${paths}">
+    <h4>ID:</h4>
+    <div th:text="${path.id}"></div>
+    <h4>Train number:</h4>
+    <div th:text="${path.trainNumber}"></div>
+    <h4>From station:</h4>
+    <div th:text="${path.fromStation}"></div>
+    <h4>To station:</h4>
+    <div th:text="${path.toStation}"></div>
+    <h4>Date time:</h4>
+    <div th:text="${path.dateTime}"></div>
+    <div>---------------------------------------------------------</div>
+</div>
+</body>
+</html>
